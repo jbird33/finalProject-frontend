@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <div>
-            <h1>Login Page!</h1>
+
 
             <div className="header">
                 <div className="navigation">
@@ -14,6 +14,8 @@ const Login = () => {
                 </div>
             </div>
 
+            <h1>Login Page!</h1>
+            
         </div>
     )
 }

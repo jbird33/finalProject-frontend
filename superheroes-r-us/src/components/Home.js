@@ -4,7 +4,7 @@ import { Link, Route } from "react-router-dom";
 const Home = () => {
     return (
         <div className="homepage">
-            <h1>See my Homepage!</h1>
+            
 
             <div className="header">
                 <div className="navigation">
@@ -14,6 +14,7 @@ const Home = () => {
                 </div>
             </div>
 
+            <h1>See my Homepage!</h1>
         </div>
     )
 }
