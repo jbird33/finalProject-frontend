@@ -76,6 +76,7 @@ class Profile extends Component {
                     <div className="navigation">
                         <Link to="/"><h3>Home</h3></Link>
                         <Link to="/about"><h3>About</h3></Link>
+                        <Link to="/findhero"><h3>Find a Hero</h3></Link>
 
                     </div>
                 </div>
