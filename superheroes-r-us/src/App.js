@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Profile from "./components/Profile";
+import FindHero from "./components/FindHero";
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
       <Route path="/about" render={() => <About /> } />
       <Route path="/login" render={(props) => <Login {...props} /> } />
       <Route path="/signup" render={(props) => <SignUp {...props} /> } />
+
+      <Route path="/profile/:id" render={(props) => <Profile {...props}/> } />
+
+      <Route path="/findhero/:id" exact render={(props) => <FindHero {...props} /> } />
  
     </div>
   );

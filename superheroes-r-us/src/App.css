@@ -58,3 +58,10 @@ h3 {
   margin-right: 40px;
   margin-top: 50px;
 }
+
+.login-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+}
