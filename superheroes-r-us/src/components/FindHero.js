@@ -1,19 +1,40 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link, Route } from "react-router-dom";
-import { useHistory } from 'react-router-dom';
-// import { Button, Card, CardBody, CardGroup, Col, Container, Input, InputGroup, InputGroupAddon, InputGroupText, Row, NavLink  } from 'reactstrap';
 
-
+// My Access token: token: 10225883973708729
 
 class FindHero extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            heroData: {}
+
 
 
         }
     }
+
+    // Connecting to API here -------------------------------------------------
+
+    fetchData = (InputValue) => {
+        axios.get("https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10225883973708729/620")
+            .then(response => {
+                console.log(response)
+                //   const heroData = response.data
+                //   console.log(heroData)
+
+                this.setState({
+                    heroData: response.data
+                })
+            })
+    }
+
+    componentDidMount = () => {
+        this.fetchData()
+    }
+
+    // ------------------------------------------------------------------------
 
     // routeChange = (props) => {
     //     console.log("Doing something naughty!")
@@ -28,6 +49,7 @@ class FindHero extends Component {
     // MAKE SURE TO TAKE OUT THE :ID IN ROUTE PATH=/findhero/:id
 
     render() {
+        console.log(this.state.heroData)
         return (
             <div>
 
@@ -42,11 +64,6 @@ class FindHero extends Component {
 
                 <h1>Find My Hero here!</h1>
 
-                {/* <Link color="primary" className="px-4"
-                    onClick={this.routeChange}
-                >
-                    Profile Page
-                </Link> */}
 
             </div>
         )
