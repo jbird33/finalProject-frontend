@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link, Route } from "react-router-dom";
+import UserInput from "./UserInput";
+import HeroCard from "./HeroCard";
 
 // My Access token: token: 10225883973708729
 
@@ -8,7 +10,9 @@ class FindHero extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            heroData: {}
+            heroData: {},
+            heroId: '',
+            ready: false
 
 
 
@@ -17,21 +21,37 @@ class FindHero extends Component {
 
     // Connecting to API here -------------------------------------------------
 
-    fetchData = (InputValue) => {
-        axios.get("https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10225883973708729/620")
+    fetchData = (inputValue) => {
+        axios.get(`https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/10225883973708729/${inputValue}`)
             .then(response => {
                 console.log(response)
                 //   const heroData = response.data
                 //   console.log(heroData)
 
                 this.setState({
-                    heroData: response.data
+                    heroData: response.data,
+                    ready: true
                 })
             })
     }
 
-    componentDidMount = () => {
-        this.fetchData()
+    // componentDidMount = () => {
+    //     this.fetchData("620")
+    // }
+
+    // handleChange() below ---------------------------------------------------
+
+    handleChange = (event) => {
+        this.setState({
+            heroId: event.target.value
+        })
+    }
+
+    // handleSubmit() below ---------------------------------------------------
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.fetchData(this.state.heroId)
     }
 
     // ------------------------------------------------------------------------
@@ -50,6 +70,7 @@ class FindHero extends Component {
 
     render() {
         console.log(this.state.heroData)
+        console.log(this.state.heroId)
         return (
             <div>
 
@@ -63,6 +84,26 @@ class FindHero extends Component {
                 </div>
 
                 <h1>Find My Hero here!</h1>
+
+                {/* <UserInput
+                    heroId={this.state.heroId}
+                    handleChange={this.handleChange}
+                    handleSubmit={this.handleSubmit}
+                /> */}
+
+
+                {this.state.ready ? <HeroCard
+                    heroData={this.state.heroData}
+                />
+                    :
+                    // <div>Please Enter Your Zip Code</div>}
+
+                     <UserInput
+                        heroId={this.state.heroId}
+                        handleChange={this.handleChange}
+                        handleSubmit={this.handleSubmit}
+                    />
+                }
 
 
             </div>
