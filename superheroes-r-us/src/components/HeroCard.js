@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as d3 from "d3";
 
 class HeroCard extends Component {
     constructor(props) {
@@ -11,13 +12,67 @@ class HeroCard extends Component {
             intelligence: parseInt(props.heroData.powerstats.intelligence),
             power: parseInt(props.heroData.powerstats.power),
             speed: parseInt(props.heroData.powerstats.speed),
-            barGraph: [parseInt(props.heroData.powerstats.combat),parseInt(props.heroData.powerstats.durability),parseInt(props.heroData.powerstats.intelligence),parseInt(props.heroData.powerstats.power),parseInt(props.heroData.powerstats.speed)]
+            barGraph: [parseInt(props.heroData.powerstats.combat), parseInt(props.heroData.powerstats.durability), parseInt(props.heroData.powerstats.intelligence), parseInt(props.heroData.powerstats.power), parseInt(props.heroData.powerstats.speed)],
+
+            barGraph2: ["Combat", "Intelligence", "Durability", "Speed", "Power"],
+
+            myRef: React.createRef(),
 
         }
     }
 
+    componentDidMount() {
+        // console.log(this.state.myRef);
+        // let size = 300;
+        // let size2 = 600;
+        // let svg = d3.select(this.state.myRef.current)
+        //     .append('svg')
+        //     .attr('width', size2)
+        //     .attr('height', size);
+        // let rect_width = 100;
+        // svg.selectAll('rect')
+        //     .data(this.state.barGraph)
+        //     .enter()
+        //     .append('rect')
+        //     .attr('x', (d, i) => 5 + i * (rect_width + 5))
+        //     .attr('y', d => size - d)
+        //     .attr('width', rect_width)
+        //     .attr('height', d => d)
+        //     .attr('fill', 'teal');
+
+        // svg.selectAll("text")
+        //     .data(this.state.barGraph2)
+        //     .enter()
+        //     .append("text")
+        //     .text((d) => d)
+        //     .attr("x", (d, i) => i * 70)
+        //     .attr("y", (d, i) => size - (10 * d) - 3)
 
 
+        const svg = d3.select(this.state.myRef.current)
+            .append("svg")
+            .attr("width", 600)
+            .attr("height", 600)
+            .style("margin-left", 100);
+
+        svg.selectAll("rect")
+            .data(this.state.barGraph)
+            .enter()
+            .append("rect")
+            .attr("x", (d, i) => i * 70)
+            .attr("y", (d, i) => 600 - 5 * d) // The 5 was a 10 but allowed me to see better
+            .attr("width", 65)
+            .attr("height", (d, i) => d * 10)
+            .attr("fill", "green")
+
+            svg.selectAll("text")
+            .data(this.state.barGraph)
+            .enter()
+            .append("text")
+            .text((d) => d)
+            .attr("x", (d, i) => i * 70)
+            .attr("y", (d, i) => 600- (5 * d) - 3) // The before the (10 * d) was an h - for height
+    }
 
 
     render() {
@@ -27,23 +82,31 @@ class HeroCard extends Component {
         // let power = parseInt(this.state.power);
         // let speed = parseInt(this.state.speed);
         console.log(this.state.barGraph)
-        
+
         return (
             <div className="herocard">
-
 
                 <h1>Let's Display Your Hero's PowerStats!</h1>
 
 
+
+
                 <img src={this.state.imageUrl} alt="hero pic here" />
                 <h2>Name: {this.state.name}</h2>
+
+                <div className="bargraph" ref={this.state.myRef}>
+                </div>
+
                 <h3>Combat: {this.state.combat} </h3>
                 <h3>Durability: {this.state.durability}</h3>
                 <h3>Intelligence: {this.state.intelligence}</h3>
                 <h3>Power: {this.state.power}</h3>
                 <h3>Speed: {this.state.speed}</h3>
-                {/* <h3>OVERALL: {this.state.combat+this.state.durability+intelligence+power+speed}</h3> */}
+                <h1>OVERALL: {this.state.combat + this.state.durability + this.state.intelligence + this.state.power + this.state.speed}</h1>
 
+                {/* <div ref={this.state.myRef}>
+
+                </div> */}
 
 
 
