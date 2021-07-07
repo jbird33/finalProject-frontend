@@ -12,7 +12,8 @@ class Profile extends Component {
                 username: "",
                 password: "",
                 email: ""
-            }
+            },
+            userId: props.match.params.id
 
         }
     }
@@ -67,7 +68,7 @@ class Profile extends Component {
 
     render() {
         const user = this.state.user
-        console.log(user)
+        console.log(this.state.userId)
         return (
             <div>
 
@@ -76,7 +77,9 @@ class Profile extends Component {
                     <div className="navigation">
                         <Link to="/"><h3>Home</h3></Link>
                         <Link to="/about"><h3>About</h3></Link>
-                        <Link to="/findhero"><h3>Find a Hero</h3></Link>
+                        {/* <Link to="/findhero/:id"><h3>Find a Hero</h3></Link> */}
+
+                        <Link to={`/findhero/${this.state.userId}`}><h3>Find a Hero</h3></Link>
 
                     </div>
                 </div>
@@ -94,7 +97,8 @@ class Profile extends Component {
 
                     </form>
 
-                    <Link to="/findhero"><h3>Find A Hero</h3></Link>
+                    {/* <Link to="/findhero/:id"><h3>Find A Hero</h3></Link> */}
+                    <Link to={`/findhero/${this.state.userId}`}><h3>Find a Hero</h3></Link>
 
                     <div className="profile-edit">
 

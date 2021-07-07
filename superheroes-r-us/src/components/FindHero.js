@@ -12,12 +12,15 @@ class FindHero extends Component {
         this.state = {
             heroData: {},
             heroId: '',
-            ready: false
+            ready: false,
+            userId: props.match.params.id
 
 
 
         }
     }
+
+    // Define state for the rerquest.params.id of the user or profile and then pass it into my link below
 
     // Connecting to API here -------------------------------------------------
 
@@ -56,21 +59,12 @@ class FindHero extends Component {
 
     // ------------------------------------------------------------------------
 
-    // routeChange = (props) => {
-    //     console.log("Doing something naughty!")
-    //     axios.get(`http://localhost:3001/users/profile/${this.props.match.params.id}`)
-    //         .then(response => {
-    //             this.props.history.push(`/profile/${response.data.id}`)
-    //             this.setState({
-    //                 user: response.data.user
-    //             })
-    //         })
-    // }
     // MAKE SURE TO TAKE OUT THE :ID IN ROUTE PATH=/findhero/:id
 
     render() {
         console.log(this.state.heroData)
         console.log(this.state.heroId)
+        console.log(this.state.userId)
         return (
             <div>
 
@@ -78,7 +72,7 @@ class FindHero extends Component {
                     <div className="navigation">
                         <Link to="/"><h3>Home</h3></Link>
                         <Link to="/about"><h3>About</h3></Link>
-                        <Link to="/profile/:id"><h3>Edit Profile</h3></Link>
+                        <Link to={`/profile/${this.state.userId}`}><h3>Edit Profile</h3></Link>
 
                     </div>
                 </div>
@@ -96,7 +90,6 @@ class FindHero extends Component {
                     heroData={this.state.heroData}
                 />
                     :
-                    // <div>Please Enter Your Zip Code</div>}
 
                      <UserInput
                         heroId={this.state.heroId}

@@ -30,9 +30,9 @@ class Login extends Component {
         axios.post("http://localhost:3001/users/login", this.state.user)
             .then(response => {
                 console.log(response)
-                this.props.history.push(`/profile/${response.data.id}`)
+                // this.props.history.push(`/profile/${response.data.id}`)
                 // Trying to redirect to the FindHero() with the :id attached
-                // this.props.history.push(`/findHero/${response.data.id}`)
+                this.props.history.push(`/findHero/${response.data.id}`)
                 console.log("Logged In User")
                 console.log(response.data.id)
             })

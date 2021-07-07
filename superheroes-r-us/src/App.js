@@ -21,8 +21,10 @@ function App() {
       <Route path="/signup" render={(props) => <SignUp {...props} /> } />
 
       <Route path="/profile/:id" render={(props) => <Profile {...props}/> } />
+
+      {/* <Route path="/findhero" exact render={(props) => <FindHero {...props} /> } /> */}
       
-      <Route path="/findhero" exact render={(props) => <FindHero {...props} /> } />
+      <Route path="/findhero/:id" exact render={(props) => <FindHero {...props} /> } />
  
     </div>
   );
