@@ -77,8 +77,7 @@ class FindHero extends Component {
                     </div>
                 </div>
 
-                <h1>Find My Hero here!</h1>
-
+                
                 {/* <UserInput
                     heroId={this.state.heroId}
                     handleChange={this.handleChange}

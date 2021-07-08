@@ -37,11 +37,19 @@
   }
 }
 
+
+
 .header {
-  border: black 4px solid;
+  /* border: black 4px solid; */
   width: 100%;
-  height: 10em;
-  background-color: rgb(198, 246, 150);
+  height: 15em;
+  background-image: url("https://www.comicbasics.com/wp-content/uploads/2020/08/The-Top-10-Greatest-Superheroes-Without-Superpowers-In-Comics-Today.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 8px solid black;
+ 
+
+
   
 }
 
@@ -66,11 +74,85 @@ h3 {
   margin-left: 25%;
 }
 
-/* .bargraph {
-  border: black 4px solid;
-  height: 600px;
-  width: 500px;
+.herocard {
+ background-color: rgb(6, 102, 176);
+}
+
+.heroesShow {
+  border: 3px black solid;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
-  float: right;
-} */
+  height: 900px; 
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+  background-color: rgb(244, 248, 135);
+
+}
+
+.heroPic {
+  /* border: 3px black solid; */
+  width: 600px;
+  height: 500px;
+}
+
+.bargraph {
+  /* border: 3px black solid; */
+  width: 600px;
+  height: 500px;
+}
+
+#heroInput {
+  width: 150px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.heroText {
+  padding-bottom: 100px;
+}
+
+.heroTitle {
+  padding: 20px;
+  color: white;
+
+}
+
+a {
+  color: white;
+  font-size: 25px;
+  border: black 3px solid;
+  background-color: rgb(240, 183, 240);
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+a::before {
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+

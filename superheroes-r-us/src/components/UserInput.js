@@ -8,9 +8,12 @@ function UserInput (props) {
             <h1>Choose a Hero or Villain by Selecting a Random Number 1-731:</h1>
 
             <form onSubmit={props.handleSubmit}>
-                <input type="text"
+                <input type="number"
                     name="heroId"
                     placeholder="Random Hero ID Here.."
+                    min="1"
+                    max="731"
+                    id="heroInput"
                     value={props.heroId}
                     onChange={props.handleChange} />
 
