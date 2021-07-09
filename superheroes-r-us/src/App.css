@@ -155,4 +155,80 @@ a:hover {
   text-shadow: 0 0 5px #ffee10;
 }
 
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+}
 
+h2 {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+h3 {
+  font-family: 'Grandstander', cursive;
+}
+
+p {
+  padding: 75px;
+  /* font-family: 'Grandstander', cursive; */
+  font-family: 'Ranchers', cursive;
+  font-size: 40px;
+  color: red;
+
+}
+
+.aboutCard
+{
+  background-color: rgb(6, 102, 176);
+}
+
+.aboutTitle
+{
+  padding: 20px;
+  color: white;
+}
+
+.aboutShow {
+  border: 3px black solid;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 900px; 
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+  background-color: rgb(244, 248, 135);
+}
+
+.animate {
+  
+  width: 75px;
+  height:75px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  border-radius: 50%;
+  animation-iteration-count: 10;
+  /* margin:30px;
+  float: center; */
+  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.words {
+  /* padding: 30px; */
+}

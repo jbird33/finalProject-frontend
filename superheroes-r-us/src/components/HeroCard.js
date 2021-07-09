@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
+import { Link, Route } from "react-router-dom";
+import Teams from "./Teams";
 
 class HeroCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            heroData: props.heroData, // Not sure I need this but, experimenting here
             imageUrl: props.heroData.image.url,
             name: props.heroData.name,
             firstAppear: props.heroData.biography['first-appearance'],
@@ -18,39 +21,13 @@ class HeroCard extends Component {
 
             barGraph2: ["Combat", "Intelligence", "Durability", "Speed", "Power"],
 
-            myRef: React.createRef(),
+            myRef: React.createRef(), // This creates the reference used to hold by bargraph
 
         }
     }
 
     componentDidMount() {
-        // console.log(this.state.myRef);
-        // let size = 300;
-        // let size2 = 600;
-        // let svg = d3.select(this.state.myRef.current)
-        //     .append('svg')
-        //     .attr('width', size2)
-        //     .attr('height', size);
-        // let rect_width = 100;
-        // svg.selectAll('rect')
-        //     .data(this.state.barGraph)
-        //     .enter()
-        //     .append('rect')
-        //     .attr('x', (d, i) => 5 + i * (rect_width + 5))
-        //     .attr('y', d => size - d)
-        //     .attr('width', rect_width)
-        //     .attr('height', d => d)
-        //     .attr('fill', 'teal');
-
-        // svg.selectAll("text")
-        //     .data(this.state.barGraph2)
-        //     .enter()
-        //     .append("text")
-        //     .text((d) => d)
-        //     .attr("x", (d, i) => i * 70)
-        //     .attr("y", (d, i) => size - (10 * d) - 3)
-
-
+  
         const svg = d3.select(this.state.myRef.current)
             .append("svg")
             .attr("width", 600)
@@ -78,11 +55,6 @@ class HeroCard extends Component {
 
 
     render() {
-        // let combat = parseInt(this.state.combat);
-        // let durability = parseInt(this.state.durability);
-        // let intelligence = parseInt(this.state.intelligence);
-        // let power = parseInt(this.state.power);
-        // let speed = parseInt(this.state.speed);
         console.log(this.state.barGraph)
 
         return (
@@ -103,21 +75,17 @@ class HeroCard extends Component {
 
                     <div className="stats">
 
-
-
                         <h3>Combat: {this.state.combat} </h3>
                         <h3>Durability: {this.state.durability}</h3>
                         <h3>Intelligence: {this.state.intelligence}</h3>
                         <h3>Power: {this.state.power}</h3>
                         <h3>Speed: {this.state.speed}</h3>
 
+                        <Link to="/teams">Add to your Team Here</Link>
+
                     </div>
 
-
                 </div>
-
-
-
 
             </div>
         )
@@ -125,9 +93,5 @@ class HeroCard extends Component {
 
 
 }
-
-
-
-
 
 export default HeroCard

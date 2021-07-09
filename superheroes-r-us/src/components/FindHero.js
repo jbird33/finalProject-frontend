@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, Route } from "react-router-dom";
 import UserInput from "./UserInput";
 import HeroCard from "./HeroCard";
+import Teams from "./Teams";
 
 // My Access token: token: 10225883973708729
 
