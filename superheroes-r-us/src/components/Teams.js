@@ -12,7 +12,7 @@ class Teams extends Component {
             heroData: {},
             userId: props.match.params.id,
             heroId: props.match.params.heroid, // Need some help here
-            team: ["Ant-Man"],
+            team1: ["Ant-Man"],
             combat: "",
             durability: "",
             intelligence: "",
@@ -20,7 +20,7 @@ class Teams extends Component {
             speed: "",
             team1Total: 0,
             team2Total: 0,
-            imageUrl: ""
+            imageUrl: "",
 
         }
     }
@@ -67,6 +67,9 @@ class Teams extends Component {
                         <h1>Team 1</h1>
                         <Team1 
                         team1Total={this.state.team1Total}
+                        team1={this.state.team1}
+                        name={this.state.heroData.name}
+
                         />
                     </div>
 
