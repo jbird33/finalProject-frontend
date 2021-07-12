@@ -173,7 +173,7 @@ p {
   /* font-family: 'Grandstander', cursive; */
   font-family: 'Ranchers', cursive;
   font-size: 40px;
-  color: red;
+  color: rgba(133, 4, 4, 0.767);
 
 }
 
@@ -213,7 +213,7 @@ p {
   background-color: red;
   position: relative;
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 15s;
   border-radius: 50%;
   animation-iteration-count: 10;
   /* margin:30px;
@@ -223,12 +223,41 @@ p {
 
 @keyframes example {
   0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:100px;}
+  25%  {background-color:rgb(246, 114, 224); left:1700px; top:0px;}
+  50%  {background-color:skyblue; left:1700px; top:100px;}
   75%  {background-color:green; left:0px; top:100px;}
   100% {background-color:red; left:0px; top:0px;}
 }
 
 .words {
   /* padding: 30px; */
+}
+
+.heroesShowTeam {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 900px; 
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 10rem;
+  outline-offset: 0.5rem;
+  background-color: rgb(244, 248, 135);
+}
+
+.team1 {
+  padding: 50px;
+}
+
+.pickHero {
+  padding:50px;
+}
+
+.team2 {
+  padding: 50px;
 }

@@ -7,10 +7,12 @@ class HeroCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            heroData: props.heroData, // Not sure I need this but, experimenting here
+            heroId: props.heroData.id, // Not sure I need this but, experimenting here
+            userId: props.userId,
             imageUrl: props.heroData.image.url,
             name: props.heroData.name,
             firstAppear: props.heroData.biography['first-appearance'],
+
             combat: parseInt(props.heroData.powerstats.combat),
             durability: parseInt(props.heroData.powerstats.durability),
             intelligence: parseInt(props.heroData.powerstats.intelligence),
@@ -27,7 +29,7 @@ class HeroCard extends Component {
     }
 
     componentDidMount() {
-  
+
         const svg = d3.select(this.state.myRef.current)
             .append("svg")
             .attr("width", 600)
@@ -53,16 +55,25 @@ class HeroCard extends Component {
             .attr("y", (d, i) => 600 - (5 * d) - 3) // The before the (10 * d) was an h - for height
     }
 
+    refreshPage = () => {
+        window.location.reload(false);
+    }
+
 
     render() {
         console.log(this.state.barGraph)
+        console.log(this.state.userId)
+        console.log(this.state.heroId)
 
         return (
             <div className="herocard">
+
                 <div className="heroTitle">
                     <h1>Let's Display Your Hero's PowerStats!</h1>
                 </div>
+
                 <div className="heroesShow">
+
                     <div className="heroPic">
                         <img src={this.state.imageUrl} alt="hero pic here" />
                         <h2>Name: {this.state.name}</h2>
@@ -70,7 +81,7 @@ class HeroCard extends Component {
                         <h1>OVERALL: {this.state.combat + this.state.durability + this.state.intelligence + this.state.power + this.state.speed}</h1>
                     </div>
 
-                    <div className="bargraph" ref={this.state.myRef}>
+                    <div className="bargraph" ref={this.state.myRef}> 
                     </div>
 
                     <div className="stats">
@@ -81,8 +92,11 @@ class HeroCard extends Component {
                         <h3>Power: {this.state.power}</h3>
                         <h3>Speed: {this.state.speed}</h3>
 
-                        <Link to="/teams">Add to your Team Here</Link>
+                        <Link to={`/teams/${this.state.userId}/${this.state.heroId}`}>Add to your Team Here</Link><br></br>
 
+                        
+
+                        <button onClick={this.refreshPage}>Choose Again!</button>
                     </div>
 
                 </div>

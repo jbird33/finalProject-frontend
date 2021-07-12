@@ -27,7 +27,7 @@ function App() {
       
       <Route path="/findhero/:id" exact render={(props) => <FindHero {...props} /> } />
 
-      <Route path="/teams" render={(props) => <Teams {...props} /> } />
+      <Route path="/teams/:id/:heroid" render={(props) => <Teams {...props} /> } />
  
     </div>
   );

@@ -88,6 +88,7 @@ class FindHero extends Component {
 
                 {this.state.ready ? <HeroCard
                     heroData={this.state.heroData}
+                    userId={this.state.userId}
                 />
                     :
 
