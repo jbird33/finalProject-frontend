@@ -261,3 +261,75 @@ p {
 .team2 {
   padding: 50px;
 }
+
+.gifs {
+  background-color: thistle;
+  border: black solid 5px;
+  height: 40em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gif1 {
+  background-image: url("https://media2.giphy.com/media/3o7WTwcO5cLAVL5Z7O/giphy.gif?cid=ecf05e47ilqux80qmtabux35gxo7dp0dhcf5blrtfw6umssd&rid=giphy.gif&ct=g");
+  border: red solid 4px;
+  height: 300px;
+  width: 308px;
+}
+
+.gif2 {
+  background-image: url("https://media3.giphy.com/media/RzaUxuEyDzDOM/200.webp?cid=ecf05e479la7xrz3in7etsbr8el6sj9s9qf29lzfxfncjspu&rid=200.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 307px;
+}
+
+.gif3 {
+  background-image: url("https://media0.giphy.com/media/X73RELfsEmQFSr460z/200w.webp?cid=ecf05e470vyfocv63rpymicelz4bvvwmlqdk3z2x5qij9fwe&rid=200w.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 307px;
+}
+
+.gif4 {
+  background-image: url("https://media0.giphy.com/media/jtVp5M9kfWR0KtUp3f/100.webp?cid=ecf05e47qytw000iokmdhggcqhafg5vqou1x5awj0ht7xv0d&rid=100.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 308px;
+}
+
+.gif5 {
+  background-image: url("https://media1.giphy.com/media/VXQuKHDhTIBWM/200w.webp?cid=ecf05e47dzqiadr8bm753b4xzi6p6kixa1xd70cv5kipa27v&rid=200w.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 307px;
+}
+
+.gif6 {
+  background-image: url("https://media1.giphy.com/media/Yjz604TUwHd9S/200w.webp?cid=ecf05e47tol6vjn8hbehon2m14ecx0eq4671z401az6dy5km&rid=200w.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 308px;
+}
+
+.gif7 {
+  background-image: url("https://media1.giphy.com/media/3Gij38skUDBvy/giphy.webp?cid=ecf05e472yrrz7o0qo8ib4uk61ebgs0loh0n37fnm95akwgr&rid=giphy.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 300px;
+}
+
+/* .gif8 {
+  background-image: url("https://media1.giphy.com/media/3Gij38skUDBvy/giphy.webp?cid=ecf05e472yrrz7o0qo8ib4uk61ebgs0loh0n37fnm95akwgr&rid=giphy.webp&ct=g");
+  background-size: cover;
+  border: red solid 4px;
+  height: 300px;
+  width: 300px;
+} */

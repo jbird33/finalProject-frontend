@@ -67,7 +67,7 @@ class Teams extends Component {
                         <h1>Team 1</h1>
                         <Team1 
                         team1Total={this.state.team1Total}
-                        team1={this.state.team1}
+                        // team1={this.state.team1}
                         name={this.state.heroData.name}
 
                         />

@@ -32,9 +32,11 @@ class SignUp extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         axios.post("http://localhost:3001/users/signup", this.state.user)
+        
         .then(response => {
             console.log(response)
-            this.props.history.push(`/profile/${response.data.id}`)
+            // this.props.history.push(`/profile/${response.data.id}`)
+            this.props.history.push(`/findHero/${response.data.id}`)
         })
     }
 
