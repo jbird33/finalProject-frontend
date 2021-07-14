@@ -4,7 +4,7 @@ const EditProfile = (props) => {
     return (
         <div>
 
-            <h1>Here is where we edit the User:</h1>
+            <h1>Need to Edit your Information?</h1>
 
             <form className="edit-form" onSubmit={props.handleSubmit}>
                 {/* Need to add this when time: value={props.user.name} into each input */}
@@ -16,7 +16,9 @@ const EditProfile = (props) => {
                 <input onChange={props.handleChange} type="password" name="password" placeholder="password" /><br></br>
                 <label htmlFor="email">Email: </label>
                 <input onChange={props.handleChange} type="text" name="email" placeholder="email" /><br></br>
+                
                 <input type="submit" value="Make Changes" /><br></br><br></br>
+                
 
             </form>
 

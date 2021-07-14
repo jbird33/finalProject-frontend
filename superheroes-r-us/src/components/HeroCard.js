@@ -69,7 +69,7 @@ class HeroCard extends Component {
             <div className="herocard">
 
                 <div className="heroTitle">
-                    <h1>Let's Display Your Hero's PowerStats!</h1>
+                    <h1 className="welcome">Let's Display Your Hero's PowerStats!</h1>
                 </div>
 
                 <div className="heroesShow">
@@ -86,13 +86,13 @@ class HeroCard extends Component {
 
                     <div className="stats">
 
-                        <h3>Combat: {this.state.combat} </h3>
-                        <h3>Durability: {this.state.durability}</h3>
-                        <h3>Intelligence: {this.state.intelligence}</h3>
-                        <h3>Power: {this.state.power}</h3>
-                        <h3>Speed: {this.state.speed}</h3>
+                        <h4>Combat: {this.state.combat} </h4>
+                        <h4>Durability: {this.state.durability}</h4>
+                        <h4>Intelligence: {this.state.intelligence}</h4>
+                        <h4>Power: {this.state.power}</h4>
+                        <h4>Speed: {this.state.speed}</h4>
 
-                        <Link to={`/teams/${this.state.userId}/${this.state.heroId}`}>Add to your Team Here</Link><br></br>
+                        <Link to={`/teams/${this.state.userId}/${this.state.heroId}`} className="link">Add to your Team Here</Link><br></br>
 
                         
 

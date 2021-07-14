@@ -15,7 +15,7 @@ class Login extends Component {
     }
 
     handleChange = (event) => {
-        
+
         this.setState(prevState => ({
             user: {
                 ...prevState.user,
@@ -57,17 +57,26 @@ class Login extends Component {
                     </div>
                 </div>
 
-                <div className="login-body">
+                <div className="aboutCard">
 
-                    <form className="login-form" onSubmit={this.handleSubmit}>
-                        <fieldset>
-                            <legend>Login</legend><br></br>
-                            <label htmlFor="username">Username: </label><input onChange={this.handleChange} type="text" name="username" placeholder="username" /> <br></br>
-                            <label htmlFor="password">Password: </label><input onChange={this.handleChange} type="password" name="password" placeholder="password" /><br></br><br></br>
-                            <input type="submit" value="Login" />
-                        </fieldset>
+                    <div className="aboutTitle">
+                        <h1 className="welcome">Let's Get You Signed In...</h1>
+                    </div>
+                    <div className="aboutShow">
 
-                    </form>
+                        <form className="login-form" onSubmit={this.handleSubmit}>
+                            <fieldset>
+                                <legend>Enter Your Credentials Below</legend><br></br>
+                                <label htmlFor="username">Username: </label><input onChange={this.handleChange} type="text" name="username" placeholder="username" /> <br></br>
+                                <label htmlFor="password">Password: </label><input onChange={this.handleChange} type="password" name="password" placeholder="password" /><br></br><br></br>
+                                <input type="submit" value="Login" />
+                            </fieldset>
+
+                        </form>
+
+                        <div className="animate"></div>
+
+                    </div>
 
                 </div>
 

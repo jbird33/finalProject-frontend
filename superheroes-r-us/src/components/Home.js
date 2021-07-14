@@ -17,7 +17,7 @@ const Home = () => {
             <div className="aboutCard">
 
                 <div className="aboutTitle">
-                    <h1>Welcome to Superheroes-R-Us!</h1>
+                    <h1 className="welcome">Welcome to Superheroes-R-Us!</h1>
                 </div>
 
                 <div className="gifs">

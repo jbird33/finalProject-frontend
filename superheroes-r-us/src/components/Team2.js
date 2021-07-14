@@ -7,8 +7,8 @@ class Team2 extends Component {
         super(props);
 
         this.state = {
-            team1: [],
-            name: props.name
+            team2: ["Atom Girl", "Yoda", "Superman", "Godzilla"],
+            name: props.name,
 
         }
     }
@@ -16,11 +16,13 @@ class Team2 extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        let team1 = [...this.state.team1];
-        team1.push(this .name);
+        let team2 = [...this.state.team2];
+
+        team2.push(this.props.name);
+        console.log(team2)
         
         this.setState({
-            team1,
+            team2: team2,
             name: ''
         })        
     }
@@ -28,20 +30,28 @@ class Team2 extends Component {
 
     render() {
         console.log(this.props.name)
-        console.log(this.team1)
+        // console.log(this.team1)
         return (
             <div>
-                <h3> Here is Team1</h3>
+                <h4> Here is Team 2:</h4>
+
+                <div className="teamMates">
+
+                    {this.state.team2.map(name => {
+                        return (
+                            <li>{name}</li>
+                        )
+                    })}
+
+                    <h4>Total Stats: 1290 pts</h4>
+
+                </div>
 
                 <form onSubmit={this.handleSubmit}>
-                <button type='submit'>Add This Hero/Villain to Team 2</button>
+                <button type='submit'>Add to Team 2</button>
                 </form>
 
-                {/* {this.state.team1.map(team => {
-                    return(
-                        {team}
-                    )
-                })} */}
+             
 
 
             </div>

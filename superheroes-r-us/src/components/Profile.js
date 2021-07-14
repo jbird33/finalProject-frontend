@@ -51,6 +51,7 @@ class Profile extends Component {
             .then(response => {
                 console.log("Editting the User Here...")
             })
+            window.location.reload(false);
     }
 
     // handleDelete() below: ---------------------------------------------------------
@@ -84,29 +85,36 @@ class Profile extends Component {
                     </div>
                 </div>
 
-                <div className="profile-body">
+                <div className="aboutCard">
 
-                    <h1>Welcome {user.name}, here is your Account information:</h1>
+                    <div className="aboutTitle">
+                        <h1 className="chooseHero">Welcome {user.name}, here is your Account information:</h1>
+                    </div>
 
-                    <form className="profile-form">
-                        <legend><h1>Here is YOU!</h1></legend>
-                        <h2>  <label htmlFor="name">Name: </label>{user.name}</h2>
-                        <h2>  <label htmlFor="username">Username: </label>{user.username}</h2>
-                        <h2>  <label htmlFor="password">Password: </label>{user.password}</h2>
-                        <h2>  <label htmlFor="email">Email: </label>{user.email}</h2>
+                    <div className="aboutShow">
 
-                    </form>
+                        <div className="flex-profile">
+                            <form className="profile-form">
+                                <legend><h1>Here is YOU!</h1></legend>
+                                <h4>  <label id="h2-form" htmlFor="name">Name: </label>{user.name}</h4>
+                                <h4>  <label id="h2-form" htmlFor="username">Username: </label>{user.username}</h4>
+                                <h4>  <label id="h2-form" htmlFor="password">Password: </label>{user.password}</h4>
+                                <h4>  <label id="h2-form" htmlFor="email">Email: </label>{user.email}</h4>
 
-                    {/* <Link to="/findhero/:id"><h3>Find A Hero</h3></Link> */}
-                    <Link to={`/findhero/${this.state.userId}`}><h3>Find a Hero</h3></Link>
+                            </form>
 
-                    <div className="profile-edit">
+                           
 
-                        <EditProfile
-                            handleChange={this.handleChange}
-                            handleSubmit={this.handleSubmit}
-                            handleDelete={this.handleDelete}
-                        />
+                            <div className="profile-edit">
+
+                                <EditProfile
+                                    handleChange={this.handleChange}
+                                    handleSubmit={this.handleSubmit}
+                                    handleDelete={this.handleDelete}
+                                    
+                                />
+                            </div>
+                        </div>
 
                     </div>
 

@@ -1,27 +1,40 @@
 import React from "react";
 
-function UserInput (props) {
-    
+function UserInput(props) {
+
     return (
         <div className="userimput">
 
-            <h1>Choose a Hero or Villain by Selecting a Random Number 1-731:</h1>
+            <div className="aboutCard">
 
-            <form onSubmit={props.handleSubmit}>
-                <input type="number"
-                    name="heroId"
-                    placeholder="Random Hero ID Here.."
-                    min="1"
-                    max="731"
-                    id="heroInput"
-                    value={props.heroId}
-                    onChange={props.handleChange} />
+                <div className="aboutTitle">
+                    <h1 className="chooseHero">Choose a Hero or Villain by Selecting a Random Number 1-731:</h1>
+                </div>
 
-                <input type="submit"
-                    value="Submit" />
-            </form>
 
-           
+
+                <div className="aboutShow">
+                    <form className="heroForm" onSubmit={props.handleSubmit}>
+                        <input type="number"
+                            className="input-number"
+                            name="heroId"
+                            placeholder="Random Hero ID Here.."
+                            min="1"
+                            max="731"
+                            id="heroInput"
+                            value={props.heroId}
+                            onChange={props.handleChange} />
+
+                        <input type="submit"
+                            value="Submit" />
+                    </form>
+
+                    <img src="https://i.ebayimg.com/images/g/lg4AAOSw8QRf7K06/s-l300.png" alt="poster" />
+
+                </div>
+
+            </div>
+
 
 
         </div>
