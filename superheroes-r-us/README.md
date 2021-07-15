@@ -70,6 +70,11 @@ If you ever loved or still love comic books, superheroes, or supervillains, then
 * CSS 3D Buttons: https://freefrontend.com/css-3d-buttons/
 * CSS Border and Outline Generator: https://html-css-js.com/css/generator/border-outline/
 
+### Issues or Unsolved Problems
+* Some powerstat data came back from the API as null and didn't work well with my D3 React Chart
+* Adjusting my enire application to fit the browser window and or mobile devices
+* Both could be fixed with future adjustments or planned features
+
 ### User Stories
 ![image](https://user-images.githubusercontent.com/83088409/125844275-2008bd83-05f4-4535-8691-58da82ad8283.png)
 

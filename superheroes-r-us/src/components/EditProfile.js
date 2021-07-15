@@ -17,8 +17,7 @@ const EditProfile = (props) => {
                 <label htmlFor="email">Email: </label>
                 <input onChange={props.handleChange} type="text" name="email" placeholder="email" /><br></br>
                 
-                <input type="submit" value="Make Changes" /><br></br><br></br>
-                
+                <input type="submit" value="Make Changes" /><br></br><br></br>                
 
             </form>
 

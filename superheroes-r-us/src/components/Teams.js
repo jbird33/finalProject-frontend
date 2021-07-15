@@ -43,11 +43,8 @@ class Teams extends Component {
             })
     }
 
-
-
     render() {
         console.log(this.state.team1Total)
-
 
         return (
             <div className="teams">
@@ -63,46 +60,37 @@ class Teams extends Component {
 
                 <div className="aboutCard">
 
-                <div className="aboutTitle">
-                    <h1 className="welcome">Build your Team and Compare Stats for an All-Powerful League!</h1>
-                </div>
-                
-
-                <div className="heroesShowTeam">
-
-
-
-                    <div className="team1">
-                        <h1>Team 1</h1>
-                        <Team1
-                            team1Total={this.state.team1Total}
-                            // team1={this.state.team1}
-                            name={this.state.heroData.name}
-
-                        />
+                    <div className="aboutTitle">
+                        <h1 className="welcome">Build your Team and Compare Stats for an All-Powerful League!</h1>
                     </div>
 
+                    <div className="heroesShowTeam">
 
-                    <div className="pickHero">
-                        <h1>.VS</h1>
-                        <img src={this.state.imageUrl} alt="hero pic here" />
-                        <h1>{this.state.heroData.name}</h1>
+                        <div className="team1">
+                            <h1>Team 1</h1>
+                            <Team1
+                                team1Total={this.state.team1Total}
+                                // team1={this.state.team1}
+                                name={this.state.heroData.name}
+                            />
+                        </div>
+
+                        <div className="pickHero">
+                            <h1>.VS</h1>
+                            <img src={this.state.imageUrl} alt="hero pic here" />
+                            <h1>{this.state.heroData.name}</h1>
+
+                        </div>
+
+                        <div className="team2">
+
+                            <h1>Team 2</h1>
+                            <Team2
+                                name={this.state.heroData.name}
+                            />
+                        </div>
 
                     </div>
-
-
-                    <div className="team2">
-
-                        <h1>Team 2</h1>
-                        <Team2
-                            name={this.state.heroData.name}
-                        />
-                    </div>
-
-
-                    {/* <h1>Let's Build a Team of Heroes or Villains!</h1> */}
-
-                </div>
 
                 </div>
             </div>

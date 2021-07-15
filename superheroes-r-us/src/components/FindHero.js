@@ -15,9 +15,6 @@ class FindHero extends Component {
             heroId: '',
             ready: false,
             userId: props.match.params.id
-
-
-
         }
     }
 
@@ -39,6 +36,7 @@ class FindHero extends Component {
             })
     }
 
+    // Testing my fetchData function to make sure it is grabbing specified character
     // componentDidMount = () => {
     //     this.fetchData("620")
     // }
@@ -60,7 +58,7 @@ class FindHero extends Component {
 
     // ------------------------------------------------------------------------
 
-    // MAKE SURE TO TAKE OUT THE :ID IN ROUTE PATH=/findhero/:id
+    // MAKE SURE TO TAKE OUT THE :ID IN ROUTE PATH=/findhero/:id (A reminder for possible issue)
 
     render() {
         console.log(this.state.heroData)
@@ -71,6 +69,7 @@ class FindHero extends Component {
 
                 <div className="header">
                     <div className="navigation">
+
                         <Link to="/"><h3>Home</h3></Link>
                         <Link to="/about"><h3>About</h3></Link>
                         <Link to={`/profile/${this.state.userId}`}><h3>Edit Profile</h3></Link>
@@ -78,27 +77,18 @@ class FindHero extends Component {
                     </div>
                 </div>
 
-                
-                {/* <UserInput
-                    heroId={this.state.heroId}
-                    handleChange={this.handleChange}
-                    handleSubmit={this.handleSubmit}
-                /> */}
-
-
                 {this.state.ready ? <HeroCard
                     heroData={this.state.heroData}
                     userId={this.state.userId}
                 />
                     :
 
-                     <UserInput
+                    <UserInput
                         heroId={this.state.heroId}
                         handleChange={this.handleChange}
                         handleSubmit={this.handleSubmit}
                     />
                 }
-
 
             </div>
         )

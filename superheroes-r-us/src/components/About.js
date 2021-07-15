@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 const About = () => {
     return (
         <div>
-
-
             <div className="header">
                 <div className="navigation">
                     <Link to="/"><h3>Home</h3></Link>
@@ -19,6 +17,7 @@ const About = () => {
                 <div className="aboutTitle">
                     <h1 className="welcome">About this Site...</h1>
                 </div>
+
                 <div className="aboutShow">
 
                     <div className="animate"></div>
@@ -29,8 +28,6 @@ const About = () => {
                     </div>
 
                 </div>
-
-
 
             </div>
 

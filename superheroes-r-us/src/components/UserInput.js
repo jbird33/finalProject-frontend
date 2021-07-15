@@ -11,8 +11,6 @@ function UserInput(props) {
                     <h1 className="chooseHero">Choose a Hero or Villain by Selecting a Random Number 1-731:</h1>
                 </div>
 
-
-
                 <div className="aboutShow">
                     <form className="heroForm" onSubmit={props.handleSubmit}>
                         <input type="number"
@@ -34,8 +32,6 @@ function UserInput(props) {
                 </div>
 
             </div>
-
-
 
         </div>
     )

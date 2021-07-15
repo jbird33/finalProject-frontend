@@ -14,7 +14,6 @@ class Profile extends Component {
                 email: ""
             },
             userId: props.match.params.id
-
         }
     }
 
@@ -100,10 +99,7 @@ class Profile extends Component {
                                 <h4>  <label id="h2-form" htmlFor="username">Username: </label>{user.username}</h4>
                                 <h4>  <label id="h2-form" htmlFor="password">Password: </label>{user.password}</h4>
                                 <h4>  <label id="h2-form" htmlFor="email">Email: </label>{user.email}</h4>
-
-                            </form>
-
-                           
+                            </form>                           
 
                             <div className="profile-edit">
 
@@ -120,10 +116,8 @@ class Profile extends Component {
 
                 </div>
 
-
             </div>
         )
-
 
     }
 

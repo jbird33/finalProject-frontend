@@ -12,15 +12,15 @@ class HeroCard extends Component {
             imageUrl: props.heroData.image.url,
             name: props.heroData.name,
             firstAppear: props.heroData.biography['first-appearance'],
-
+            // Power Stats below
             combat: parseInt(props.heroData.powerstats.combat),
             durability: parseInt(props.heroData.powerstats.durability),
             intelligence: parseInt(props.heroData.powerstats.intelligence),
             power: parseInt(props.heroData.powerstats.power),
             speed: parseInt(props.heroData.powerstats.speed),
-
+            // Bar Grap D3 below
             barGraph: [parseInt(props.heroData.powerstats.combat), parseInt(props.heroData.powerstats.durability), parseInt(props.heroData.powerstats.intelligence), parseInt(props.heroData.powerstats.power), parseInt(props.heroData.powerstats.speed)],
-
+            // I might want to use this array for labels for my chart
             barGraph2: ["Combat", "Intelligence", "Durability", "Speed", "Power"],
 
             myRef: React.createRef(), // This creates the reference used to hold by bargraph
@@ -52,7 +52,7 @@ class HeroCard extends Component {
             .append("text")
             .text((d) => d)
             .attr("x", (d, i) => i * 70)
-            .attr("y", (d, i) => 600 - (5 * d) - 3) // The before the (10 * d) was an h - for height
+            .attr("y", (d, i) => 600 - (5 * d) - 3) // Before the (10 * d) was an h - for height
     }
 
     refreshPage = () => {
@@ -81,7 +81,7 @@ class HeroCard extends Component {
                         <h1>OVERALL: {this.state.combat + this.state.durability + this.state.intelligence + this.state.power + this.state.speed}</h1>
                     </div>
 
-                    <div className="bargraph" ref={this.state.myRef}> 
+                    <div className="bargraph" ref={this.state.myRef}>
                     </div>
 
                     <div className="stats">
@@ -94,7 +94,6 @@ class HeroCard extends Component {
 
                         <Link to={`/teams/${this.state.userId}/${this.state.heroId}`} className="link">Add to your Team Here</Link><br></br>
 
-                        
 
                         <button onClick={this.refreshPage}>Choose Again!</button>
                     </div>

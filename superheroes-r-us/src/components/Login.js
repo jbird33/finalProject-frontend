@@ -10,7 +10,6 @@ class Login extends Component {
                 username: "",
                 password: ""
             }
-
         }
     }
 
@@ -40,15 +39,11 @@ class Login extends Component {
                 console.log(err)
                 alert("Wrong Username or Password. Try Again")
             })
-
     }
-
 
     render() {
         return (
             <div>
-
-
                 <div className="header">
                     <div className="navigation">
                         <Link to="/"><h3>Home</h3></Link>
@@ -71,7 +66,6 @@ class Login extends Component {
                                 <label htmlFor="password">Password: </label><input onChange={this.handleChange} type="password" name="password" placeholder="password" /><br></br><br></br>
                                 <input type="submit" value="Login" />
                             </fieldset>
-
                         </form>
 
                         <div className="animate"></div>
@@ -80,12 +74,8 @@ class Login extends Component {
 
                 </div>
 
-
-
             </div>
         )
-
-
     }
 
 }

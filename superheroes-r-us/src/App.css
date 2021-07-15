@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -40,7 +42,6 @@
 
 
 .header {
-  /* border: black 4px solid; */
   width: 100%;
   height: 15em;
   background-image: url("https://www.comicbasics.com/wp-content/uploads/2020/08/The-Top-10-Greatest-Superheroes-Without-Superpowers-In-Comics-Today.jpg");
@@ -94,13 +95,11 @@ h3 {
 }
 
 .heroPic {
-  /* border: 3px black solid; */
   width: 600px;
   height: 500px;
 }
 
 .bargraph {
-  /* border: 3px black solid; */
   width: 600px;
   height: 500px;
 }
@@ -180,16 +179,10 @@ h4 {
 
 p {
   padding: 75px;
-  /* font-family: 'Grandstander', cursive; */
-  /* font-family: 'Ranchers', cursive; */
-  /* font-family: 'Chewy', cursive; */
   font-family: 'Do Hyeon', sans-serif;
   font-size: 35px;
   color: rgba(199, 17, 41, 0.767);
-  text-shadow: 1px 3px 0px #0a0a0a;
-  /* text-shadow: 0 0 3px #FF0000; */
-  
-
+  text-shadow: 1px 3px 0px #0a0a0a; 
 }
 
 .aboutCard
@@ -230,10 +223,7 @@ p {
   animation-name: example;
   animation-duration: 15s;
   border-radius: 50%;
-  animation-iteration-count: 20;
-  /* margin:30px;
-  float: center; */
-  
+  animation-iteration-count: 20; 
 }
 
 @keyframes example {
@@ -242,10 +232,6 @@ p {
   50%  {background-color:skyblue; left:1700px; top:100px;}
   75%  {background-color:green; left:0px; top:100px;}
   100% {background-color:red; left:0px; top:0px;}
-}
-
-.words {
-  /* padding: 30px; */
 }
 
 .heroesShowTeam {
@@ -291,8 +277,7 @@ p {
   border: red solid 8px;
   height: 300px;
   width: 300px;
-  border-style: groove;
-  
+  border-style: groove;  
 }
 
 .gif2 {
@@ -425,14 +410,12 @@ label {
   width: 700px;
   padding-top: 80px;
   padding-left: 35em;
-  padding-bottom: 70px;
-  
+  padding-bottom: 70px;  
 }
 
 .heroForm {
   padding-top: 60px;
-  padding-bottom: 30px;;
-  
+  padding-bottom: 30px;  
 }
 
 .heroPic {
@@ -444,7 +427,6 @@ h1.chooseHero {
 }
 
 .profile-form {
-  /* border: black 2px solid; */
   border: 21px ridge rgba(62, 143, 218, 0.808);
   border-radius: 23px;
   width: 500px;
@@ -467,9 +449,7 @@ h1.chooseHero {
 }
 
 .bargraph {
-  /* border: black 3px solid; */
   padding-top: 180px;
-
 }
 
 input[type=submit] {
@@ -485,6 +465,7 @@ input[type=submit] {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 input[type=submit]:hover {
   background: #016ABC;
   color: #fff;
@@ -494,15 +475,13 @@ input[type=submit]:hover {
   text-shadow:none;
 }
 
-input[type=number] {
-  
+input[type=number] {  
   height: 30px;
 }
 
 .input-number {
   width: 100px;
-  font-size: 18px;
-  
+  font-size: 18px;  
 }
 
 input[type=text] {
@@ -624,7 +603,7 @@ li {
 .teamMates {
   /* border: black 3px solid; */
   border: 9px double #2721A4;
-border-radius: 13px;
+  border-radius: 13px;
   margin-bottom: 40px;
   padding: 20px;
 }

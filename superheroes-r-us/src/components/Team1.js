@@ -55,21 +55,9 @@ class Team1 extends Component {
                     <button type='submit'>Add to Team 1</button>
                 </form>
 
-
-
-
-
-                {/* {this.state.team1.map(team => {
-                    return(
-                        <h3>{team}</h3>
-                    )
-                })} */}
-
-
             </div>
         )
     }
-
 }
 
 export default Team1

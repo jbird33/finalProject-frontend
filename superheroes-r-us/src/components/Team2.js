@@ -9,7 +9,6 @@ class Team2 extends Component {
         this.state = {
             team2: ["Atom Girl", "Yoda", "Superman", "Godzilla"],
             name: props.name,
-
         }
     }
 
@@ -49,15 +48,11 @@ class Team2 extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                 <button type='submit'>Add to Team 2</button>
-                </form>
-
-             
-
+                </form>            
 
             </div>
         )
     }
-
 }
 
 export default Team2

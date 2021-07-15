@@ -12,7 +12,6 @@ class SignUp extends Component {
                 password: "",
                 email: ""
             }
-
         }
     }
 
@@ -40,13 +39,11 @@ class SignUp extends Component {
             })
     }
 
-
     // -----------------------------------------------------------------
 
     render() {
         return (
             <div>
-
 
                 <div className="header">
                     <div className="navigation">
@@ -86,13 +83,9 @@ class SignUp extends Component {
 
                         </div>
 
-
                     </div>
 
-
                 </div>
-
-
 
             </div>
         )
