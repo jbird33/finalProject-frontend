@@ -54,6 +54,22 @@ If you ever loved or still love comic books, superheroes, or supervillains, then
 * User will have the option to search by name for their favorite hero/villain as well as, by random choice
 * Finally, the user will have a compete button with a self built algorithm that decides which team would win. Declaring that winner with some sort of animation would be ideal
 
+### Resources
+* GA Instructors (David Magbee, Casey Harding, & Leo Rodriguez) Special Thanks!
+* GA Lesson Repositories
+* GA Teammates (David Lewis, Andrea Clark, Margie Ball, Patti Huancaya)
+* SuperHero API: https://superheroapi.com/index.html
+* D3 React Charts Tutorial: https://medium.com/@varvara.munday/d3-in-react-a-step-by-step-tutorial-cba33ce000ce
+* D3 Using D3 w/ React: https://blog.logrocket.com/data-visualization-in-react-using-react-d3-c35835af16d0/#settingupabarchartwithd3andreact
+* CORS Install/Issues: https://www.npmjs.com/package/cors
+* CORS Anywhere/Herokuapp: https://cors-anywhere.herokuapp.com/corsdemo
+* Color Palette: https://coolors.co/0666b0-fef887-6f251e-7dc94f-e0082f
+* CSS Animations: https://www.w3schools.com/css/css3_animations.asp 
+* Refresh Page in React: https://upmostly.com/tutorials/how-to-refresh-a-page-or-component-in-react
+* Superhero GIFs: https://giphy.com/explore/superhero
+* CSS 3D Buttons: https://freefrontend.com/css-3d-buttons/
+* CSS Border and Outline Generator: https://html-css-js.com/css/generator/border-outline/
+
 ### User Stories
 ![image](https://user-images.githubusercontent.com/83088409/125844275-2008bd83-05f4-4535-8691-58da82ad8283.png)
 
