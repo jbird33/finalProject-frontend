@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# SUPERHEROES-R-US  App | Jeremiah Miller
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Link to App
+http://localhost:3000/
 
-## Available Scripts
+### Description
+If you ever loved or still love comic books, superheroes, or supervillains, then this is the app for you. There are those out there that try and stay true to just one universe that holds their beloved characters. However,there are those like me, that love the Capcom game that used a cross platform list of characters. Who wouldn't want to see how the Justice League would do in a fair battle against the Avengers? But, why stop there? What if you could throw Luke Skywalker into the mix with a Godzilla counterpart? Doesn't that just sound coooool? Well, here at Superheroes-R-Us that is exactly what you can do! Sign up and Login to your account to start building a Team 1 versus Team 2 matchup. Compare the powerstats from over 700 heroes or villains to answer that nagging question all us comic lovers have: What If...?
 
-In the project directory, you can run:
+### Technologies Used
+* Express
+* Node JS
+* Sequelize
+* React
+* Google Chrome
+* PostgreSQL
+* HTML, CSS, JS
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Installation Instructions
+1. Fork and clone both front end and back end repositories
+2. Install dependencies
+    * Front End: Install & Import
+        - Axios
+        - React-Router-DOM
+        - D3
+    * Back End
+        - Express
+        - Body-Parser
+        - Sequelize-CLI
+        - Sequelize
+        - PG
+3. In config.json file of back end change username and password to correct account
+4. Set up database for superhero_dev in PostgreSQL
+5. Start up server on both files: node server.js / npm start
