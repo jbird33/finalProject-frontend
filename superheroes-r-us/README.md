@@ -66,3 +66,9 @@ If you ever loved or still love comic books, superheroes, or supervillains, then
 ### Wireframes 
 ![image](https://user-images.githubusercontent.com/83088409/125844571-f6ab376e-ed27-454d-98e2-56ae443ebd44.png)
 
+![image](https://user-images.githubusercontent.com/83088409/125851296-6a2a074a-36ce-48ae-877c-b3ddfbbe2326.png)
+
+![image](https://user-images.githubusercontent.com/83088409/125851376-f1c849d8-27e8-4c7f-8e78-4edb71542c1b.png)
+
+
+
