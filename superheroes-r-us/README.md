@@ -48,10 +48,11 @@ If you ever loved or still love comic books, superheroes, or supervillains, then
 * Users can add each found character to one of two teams to compete against the other, and see their array of members
 
 ### Planned Features
-* User will have a database that holds their two teams competing against each other
-* User will have ability to see the individual overall stats and the team's overall stats to see who should be 'kicked' from the team to create a better overall score
-* User will be able to search by name for their favorite hero/villain with search criteria integrity as well as, by random choice
-* Finally, the user will have a compete button with an algorithm that decides which team would win and declare that winner with some sort of animation
+* Application will change from a 'front-end' array of Team members and over-all stats to a Model/Database in Express
+* The data will still be pulled from the API and pushed to the Model for more efficent data manipulation
+* User will have ability to see the individual overall stats, and the team's overall stats, to see who should be 'kicked'/(Deleted) from the team to create a better overall score
+* User will have the option to search by name for their favorite hero/villain as well as, by random choice
+* Finally, the user will have a compete button with a self built algorithm that decides which team would win. Declaring that winner with some sort of animation would be ideal
 
 ### User Stories
 
