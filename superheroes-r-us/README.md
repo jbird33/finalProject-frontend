@@ -55,9 +55,21 @@ If you ever loved or still love comic books, superheroes, or supervillains, then
 * Finally, the user will have a compete button with a self built algorithm that decides which team would win. Declaring that winner with some sort of animation would be ideal
 
 ### User Stories
+![image](https://user-images.githubusercontent.com/83088409/125844275-2008bd83-05f4-4535-8691-58da82ad8283.png)
+
+![image](https://user-images.githubusercontent.com/83088409/125844342-5858c90b-0a1f-4f4a-86aa-c21ffdf2043d.png)
 
 
 ### Entity Relationship Diagrams
+![image](https://user-images.githubusercontent.com/83088409/125844439-ff05559b-2508-42f3-9eee-19069678b89b.png)
 
 
 ### Wireframes 
+![image](https://user-images.githubusercontent.com/83088409/125844571-f6ab376e-ed27-454d-98e2-56ae443ebd44.png)
+
+![image](https://user-images.githubusercontent.com/83088409/125851296-6a2a074a-36ce-48ae-877c-b3ddfbbe2326.png)
+
+![image](https://user-images.githubusercontent.com/83088409/125851376-f1c849d8-27e8-4c7f-8e78-4edb71542c1b.png)
+
+
+
